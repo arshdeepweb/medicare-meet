@@ -39,6 +39,8 @@ export async function bookAppointment(formData) {
       throw new Error("Patient not found");
     }
 
+    console.log(patient)
+
     // Parse form data
     const doctorId = formData.get("doctorId");
     const startTime = new Date(formData.get("startTime"));
