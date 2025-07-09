@@ -30,6 +30,8 @@ export async function checkAndAllocateCredits(user) {
       return user;
     }
 
+    console.log("User", user)
+
     // Check if user has a subscription
     const { has } = await auth();
 
